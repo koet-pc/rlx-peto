@@ -1,0 +1,11 @@
+Package: rlx-peto
+Version: 3.0-1
+Architecture: all
+Maintainer: koet <koet@koet-pc>
+Installed-Size: 14
+Depends: gdebi-core, mc
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

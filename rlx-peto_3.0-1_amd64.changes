@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Thu, 25 Jun 2020 09:37:25 +0200
+Source: rlx-peto
+Binary: rlx-peto
+Architecture: source all
+Version: 3.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: koet <koet@koet-pc>
+Changed-By: koet <koet@koet-pc>
+Description:
+ rlx-peto   - <insert up to 60 chars description>
+Changes:
+ rlx-peto (3.0-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 4751e9d696e3915f38dd7f6987e02d7899fbab5c 794 rlx-peto_3.0-1.dsc
+ 6c4596a5a293debbe6063ac223857b426044221a 216 rlx-peto_3.0.orig.tar.xz
+ 4701275613578ab0944c403be96294b9f4582889 2604 rlx-peto_3.0-1.debian.tar.xz
+ 2418f3dfc5dd8c40c9140efcc8b369963016ffaf 2852 rlx-peto_3.0-1_all.deb
+ 866c4278c2fed88f95970889c2b9e65901334e10 4670 rlx-peto_3.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 386abd6de6800ec1ec92831658595e37a4e0fcde63a196100da96f7c22b6a990 794 rlx-peto_3.0-1.dsc
+ c46ec38d095d103e2e83dd2300ef1d82c72b3d07ab9e95dfd8fc2137b61c8dd4 216 rlx-peto_3.0.orig.tar.xz
+ 6b84778a52c843964b568d2fb2cffbdd71dbcdd3d55fa5ac7114b5651a6ea36d 2604 rlx-peto_3.0-1.debian.tar.xz
+ 82acf924110d8499cc48e2721c72566f3753c0ae2513ba6317052e5d6e6d588e 2852 rlx-peto_3.0-1_all.deb
+ bee05d5b8994820f83a4fa5fbea697f2a5d59375a7eb64f47ddbdfdd463382d7 4670 rlx-peto_3.0-1_amd64.buildinfo
+Files:
+ 2b876c8b90edecef787d6ee95a32d88f 794 unknown optional rlx-peto_3.0-1.dsc
+ 40a1598813ed0bcfd152c137cccfe14f 216 unknown optional rlx-peto_3.0.orig.tar.xz
+ dffa7c722711dfcf6e4c15ac968cf89e 2604 unknown optional rlx-peto_3.0-1.debian.tar.xz
+ 33b86e8e49c9be1de4a878ead241da01 2852 unknown optional rlx-peto_3.0-1_all.deb
+ e0852e0a8f9eced26d10861088ebe9b6 4670 unknown optional rlx-peto_3.0-1_amd64.buildinfo

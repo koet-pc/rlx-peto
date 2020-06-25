@@ -1,0 +1,65 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package rlx-peto
+dpkg-buildpackage: info: source version 3.0-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by koet <koet@koet-pc>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building rlx-peto using existing ./rlx-peto_3.0.orig.tar.xz
+dpkg-source: info: building rlx-peto in rlx-peto_3.0-1.debian.tar.xz
+dpkg-source: info: building rlx-peto in rlx-peto_3.0-1.dsc
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'rlx-peto' in '../rlx-peto_3.0-1_all.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../rlx-peto_3.0-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian rlx-peto_3.0-1_amd64.changes ...
+E: rlx-peto changes: changed-by-address-malformed koet <koet@koet-pc>
+E: rlx-peto source: missing-separator-between-items in rlx-peto depends field between '${misc:Depends}' and 'gdebi-core'
+W: rlx-peto source: debhelper-but-no-misc-depends rlx-peto
+E: rlx-peto source: maintainer-address-malformed koet <koet@koet-pc>
+W: rlx-peto source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: rlx-peto source: bad-homepage <insert the upstream URL, if relevant>
+E: rlx-peto source: debian-rules-is-dh_make-template
+W: rlx-peto source: space-in-std-shortname-in-dep5-copyright <special license> (paragraph at line 5)
+W: rlx-peto: wrong-bug-number-in-closes l3:#nnnn
+E: rlx-peto: debian-changelog-file-contains-invalid-email-address koet@koet-pc
+W: rlx-peto: new-package-should-close-itp-bug
+E: rlx-peto: changelog-is-dh_make-template
+E: rlx-peto: helper-templates-in-copyright
+W: rlx-peto: copyright-has-url-from-dh_make-boilerplate
+E: rlx-peto: copyright-contains-dh_make-todo-boilerplate
+E: rlx-peto: description-is-dh_make-template
+E: rlx-peto: maintainer-address-malformed koet <koet@koet-pc>
+E: rlx-peto: section-is-dh_make-template
+W: rlx-peto: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: rlx-peto: bad-homepage <insert the upstream URL, if relevant>
+Finished running lintian.
